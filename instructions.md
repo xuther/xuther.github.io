@@ -408,41 +408,41 @@ Take the code below and place it where it says `//add code to check if game is o
   for (var i = 0; i < 3; i++) {
     //check column
     if (
-      game[i][0] != 0 && //has someone played in this square. 
-      game[i][1] == game[i][0] && // has the same person played in all the other squares in the column? 
-      game[i][2] == game[i][0]
+      board[i][0] != 0 && //has someone played in this square. 
+      board[i][1] == board[i][0] && // has the same person played in all the other squares in the column? 
+      board[i][2] == board[i][0]
     ) {
-      return game[i][0];
+      return board[i][0];
     }
     //check row
     if (
-      game[0][i] != 0 &&
-      game[1][i] == game[0][i] &&
-      game[2][i] == game[0][i]
+      board[0][i] != 0 &&
+      board[1][i] == board[0][i] &&
+      board[2][i] == board[0][i]
     ) {
-      return game[0][i];
+      return board[0][i];
     }
     //check how many suqares in column have a mark
     for (var j = 0; j < 3; j++) {
-      if (game[i][j] != 0) {
+      if (board[i][j] != 0) {
         endcount++;
       }
     }
   }
   //check our diagonals
   if (
-    game[0][0] != 0 &&
-    game[1][1] == game[0][0] &&
-    game[2][2] == game[0][0]
+    board[0][0] != 0 &&
+    board[1][1] == board[0][0] &&
+    board[2][2] == board[0][0]
   ) {
-    return game[1][1];
+    return board[1][1];
   }
   if (
-    game[0][2] != 0 &&
-    game[1][1] == game[0][2] &&
-    game[2][0] == game[0][2]
+    board[0][2] != 0 &&
+    board[1][1] == board[0][2] &&
+    board[2][0] == board[0][2]
   ) {
-    return game[1][1];
+    return board[1][1];
   }
 
   //check for draw
@@ -469,11 +469,11 @@ This is the start of a _for loop_ - don't worry too much about this. In a nut sh
 ```
 //check column
     if (
-      game[i][0] != 0 && //has someone played in this square. 
-      game[i][1] == game[i][0] && // has the same person played in all the other squares in the column? 
-      game[i][2] == game[i][0]
+      board[i][0] != 0 && //has someone played in this square. 
+      board[i][1] == board[i][0] && // has the same person played in all the other squares in the column? 
+      board[i][2] == board[i][0]
     ) {
-      return game[i][0];
+      return board[i][0];
     }
 ```
 
@@ -482,11 +482,11 @@ Another if check to see if someone has a mark in all three spots in the column. 
 ```
     //check row
     if (
-      game[0][i] != 0 &&
-      game[1][i] == game[0][i] &&
-      game[2][i] == game[0][i]
+      board[0][i] != 0 &&
+      board[1][i] == board[0][i] &&
+      board[2][i] == board[0][i]
     ) {
-      return game[0][i];
+      return board[0][i];
     }
 ```
 Same thing, just with the rows. 
@@ -496,7 +496,7 @@ you'll notice that if the check is successful, we `return` a value. This is how 
 ```
     //check how many suqares in column have a mark
     for (var j = 0; j < 3; j++) {
-      if (game[i][j] != 0) {
+      if (board[i][j] != 0) {
         endcount++;
       }
     }
@@ -509,16 +509,16 @@ That brings us to the end of the for loop, but there's one more special case. Th
 ```
 //check our diagonals
   if (
-    game[0][0] != 0 &&
-    game[1][1] == game[0][0] &&
-    game[2][2] == game[0][0]
+    board[0][0] != 0 &&
+    board[1][1] == board[0][0] &&
+    board[2][2] == board[0][0]
   ) {
     return board[1][1];
   }
   if (
-    game[0][2] != 0 &&
-    game[1][1] == game[0][2] &&
-    game[2][0] == game[0][2]
+    board[0][2] != 0 &&
+    board[1][1] == board[0][2] &&
+    board[2][0] == board[0][2]
   ) {
     return board[1][1];
   }
