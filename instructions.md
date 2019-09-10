@@ -1,6 +1,6 @@
 # Introduction 
 
-Today we're going to program a very simple game of tic-tac-toe. You can play a sample of what we'll be doing at [InsertLinkHere](http://JoesWebsite).
+Today we're going to program a very simple game of tic-tac-toe. You can play a sample of what we'll be doing [here](https://github.com/xuther/xuther.github.io/blob/master/instructions.md).
 
 We're programming in the Javascript language, using a technology called HTML Canvas. 
 
@@ -8,7 +8,7 @@ We'll be moving fast, and glossing over a lot of things in an attempt to get som
 
 # Setup
 
-Download the files you'll need from [Here](files), if you can't get to those, we'll have a flash drive coming around. 
+Download the files you'll need from [Here](https://github.com/xuther/xuther.github.io/releases/download/1.0/tic-tac-toe.zip), if you can't get to those, we'll have a flash drive coming around. 
 
 Unzip the files, and note where they are. They're probably in your `Downloads` folder. Next you'll need to open Chrome. Right click anywhere on the page and select the `Inspect` option. 
 
