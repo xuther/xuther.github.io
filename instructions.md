@@ -1,6 +1,6 @@
 # Introduction 
 
-Today we're going to program a very simple game of tic-tac-toe. You can play a sample of what we'll be doing [here](https://github.com/xuther/xuther.github.io/blob/master/instructions.md).
+Today we're going to program a very simple game of tic-tac-toe. You can play a sample of what we'll be doing [here](https://xuther.github.io).
 
 We're programming in the Javascript language, using a technology called HTML Canvas. 
 
