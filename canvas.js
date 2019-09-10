@@ -44,10 +44,10 @@ document.addEventListener(
 
     canvas.addEventListener("click", e => {
         //game end code here 
-              if (gameEnd) {
-                      drawBoard();
-                      return;
-                    }
+        if(gameEnd) {
+          drawBoard();
+          return;
+        }
 
         var xcoords = e.clientX;
         var ycoords = e.clientY;
