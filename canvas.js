@@ -20,6 +20,8 @@ document.addEventListener(
         //Add code to draw the board here
         ctx.clearRect(0, 0, canvas.width, canvas.height); //clear it
         
+        game = [[0, 0, 0], [0, 0, 0], [0, 0, 0]];
+
         bound = Math.min(canvas.width, canvas.height);
         size = bound / 3;
 
